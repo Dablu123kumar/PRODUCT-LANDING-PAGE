@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-headphones"></i>logo
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="menubar"></i>
+            </div>
+        </nav>
+        <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Headphone-removebg-preview.png" alt="" id="headphone" class="animate__animated animate__zoomIn animate__repeat-2">
+       
+            <h1 class="text animate__animated animate__fadeIn animate__delay-1s">headphone</h1>
+            <div class="slider  animate__animated animate__fadeIn animate__delay-1s" >
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                       <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Headphone-removebg-preview.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Daco_259640-removebg-preview.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Daco_1777649-removebg-preview.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Daco_2158355-removebg-preview.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Photos\Daco_4166512-removebg-preview.png" alt="">
+                       </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+       
+    </header>
+    <section id="sideBar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#produc">Product</a>
+        <a href="#offer">Offers</a>
+        <a href="#contact">contact</a>
+        <a href="#servies">Services</a>
+    </section>
+    <div class="footer">
+      <div class="about" id="about">
+        <h4>About Us</h4>
+        <li>PVT LTD Company</li>
+        <li>Since 1998</li>
+        <li>Beleave on costomer</li>
+       
+      </div>
+      <div class="product" id="product">
+        <h4>Product</h4>
+        <li>Quality: No. 1</li>
+        <li>Ondemand</li>
+        <li>User friendly</li>
+        
+      </div>
+      <div class="offer" id="offer">
+        <h4>Offers</h4>
+        <li>Exclusive offers for our costomers</li>
+        <li>Minimum offers: 10%</li>
+        <li>Discounts: up to 50% off on reguler  products</li>
+        
+      </div>
+      <div class="contact" id="contact">
+        <h4>Contact Us</h4>
+        <li>Mob No. : 1234567890</li>
+        <li>Email:abc123@gmail.com</li>
+        <li>Whatsup:9032146587</li>
+      
+      </div>
+      <div class="service" id="servies">
+        <h4>Services</h4>
+        <li>All over india</li>
+        <li>Fast services</li>
+        <li>On time delivery</li>
+      </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <script>
+    var MenuBar  = document.getElementById("menubar")
+    var SideBar = document.getElementById("sideBar")
+    SideBar.style.width = "200px";
+    MenuBar.onclick = function(){
+      if(  SideBar.style.width == "0px"){
+        SideBar.style.width = "200px"
+      }
+      else{
+        SideBar.style.width = "0px"
+      }
+      
+    }
+
+  </script>
+</html>
